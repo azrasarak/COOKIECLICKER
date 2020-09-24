@@ -1,0 +1,20 @@
+body{
+    text-align: center; 
+    background-color: purple;
+    color: white; 
+    padding-top: 3em; 
+}
+#cookie{
+    display: block; 
+    width: 90% 
+}
+table{ 
+    border: 3x solid;
+    border-radius: 4px
+}
+#numbers {
+    text-align: center; 
+}
+#Level{
+    text-align: center; 
+}

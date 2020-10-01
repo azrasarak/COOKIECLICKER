@@ -18,3 +18,11 @@ table{
 #Level{
     text-align: center; 
 }
+
+.remove { 
+    display: none; 
+
+}
+.show { 
+    display: show;
+}

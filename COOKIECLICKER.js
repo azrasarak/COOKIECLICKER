@@ -1,28 +1,36 @@
+let cookieEl= document.getElementById('cookie')
+let num = 0; 
 
-var num = 0; 
 
-var cookie = document.getElementById("cookie"); 
 
-function cookieClick(){
+let cookie = document.getElementById("cookie"); 
+
+function cookieClicked(){
     num += 1; 
 
-    var numbers = document.getElementById("numbers"); 
+    var numbersEl = document.getElementById("numbers"); 
 
     var upgradeLevel = document.getElementById ("upgradeLevel");
 
-numbers.innerHTML = num; 
-if (num >= 15){
-    num += 2; 
-    upgradeLevel.innerHTML = "Level 1";
+    numbersEl.innerHTML = num; 
+    if (num >= 10 ){
+        num += 2; 
+        upgradeLevel.innerHTML = "Level 1";
     }
-if (num >= 250){
-    num += 10; 
-    upgradeLevel.innerHTML = "Level 2"; 
-}
-if (num >= 500){
-    num += 30; 
-    upgradeLevel.innnerHTML = "Level 3"; 
-}
+    if (num >= 20 ){
+        num += 10; 
+        upgradeLevel.innerHTML = "Level 2"; 
+    }
+    if (num >=50){
+        num+= 50; 
+        upgradeLevel.innerHTML = "Level 3";
+    }
+ 
+    console.log("Checking mulitple")
+    if (num % 10 === 0 ){
+        alert("Congrats your score is a mulitple of 10!")
+    }
+
 }
    
 
